@@ -1,0 +1,67 @@
+%col {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%;
+}
+
+%btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+%decor {
+  content: '';
+  position: absolute;
+  top: 11px;
+  height: 3px;
+  width: 100%;
+  border-top: 2px solid #ebebeb;
+  border-bottom: 2px solid #ebebeb;
+}
+
+%bgr{
+  background-size: 28px 16px;
+  background-repeat: no-repeat;
+}
+
+
+/*Additional Classes for Offer Title Decorations*/
+
+.decor-left {
+  background-image: url("../images/dec-l.png");
+  @extend %bgr;
+  background-position: right;
+  &:before {
+    @extend %decor;
+    left: -40px;
+  }
+  &:after{
+    @extend %decor;
+    height: 7px;
+    background: linear-gradient(to right, #FFFFFF 0%, transparent);
+    left: -40px;
+    z-index: 10;
+    border: none;
+  }
+}
+
+.decor-right {
+  background-image: url("../images/dec-r.png");
+  @extend %bgr;
+  background-position: left;
+  &:after {
+    @extend %decor;
+    left: 40px;
+  }
+  &:before{
+    @extend %decor;
+    height: 7px;
+    background: linear-gradient(to left, #FFFFFF 0%, transparent);
+    left: 40px;
+    z-index: 10;
+    border: none;
+  }
+}

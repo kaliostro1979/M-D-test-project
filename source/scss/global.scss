@@ -1,0 +1,39 @@
+@import "templates";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+}
+
+ul{
+  list-style: none;
+}
+
+img{
+  width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+p{
+  font-size: inherit;
+  color: #7a7a7a;
+}
+
+a{
+  color: #606060;
+  text-decoration: none;
+  font-size: inherit;
+  &:hover{
+    text-decoration: none;
+  }
+}
