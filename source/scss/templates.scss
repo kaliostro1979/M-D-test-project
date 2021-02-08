@@ -3,13 +3,15 @@
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
-  width: 100%;
 }
 
 %btn {
   border: none;
   background: transparent;
   cursor: pointer;
+  &:focus{
+    outline: none;
+  }
 }
 
 %decor {
@@ -25,6 +27,21 @@
 %bgr{
   background-size: 28px 16px;
   background-repeat: no-repeat;
+}
+
+%title{
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+%desc{
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 14px;
 }
 
 
@@ -64,4 +81,34 @@
     z-index: 10;
     border: none;
   }
+}
+
+
+
+/*Additional Classes for Facts Title Decorations*/
+
+.facts-decor__left{
+  background-image: url("../images/dec-l.png");
+  @extend %bgr;
+  background-position: right;
+}
+
+.facts-decor__right{
+  background-image: url("../images/dec-r.png");
+  @extend %bgr;
+  background-position: left;
+}
+
+
+/* Counter Points */
+
+%points{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 47%;
+  height: 6px;
+  width: 6px;
+  background: #484848;
+  transform: rotate(45deg);
 }
