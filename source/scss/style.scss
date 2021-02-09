@@ -565,41 +565,38 @@ header {
     &__value {
       padding: 26px 0;
       border-bottom: 2px solid $milk_white_2;
+    }
 
-      p {
+    .price-value__main{
+      position: relative;
+      small{
+        font-size: 12px;
+        color: #8a8a8a;
+      }
+      &-general{
         font-size: 60px;
-        color: $dark_gray;
         font-weight: 800;
         position: relative;
-        display: block;
-
-        &:before {
+        margin-right: 25px;
+        &:before{
           content: '';
           position: absolute;
-          top: 46px;
-          left: 120px;
           width: 10px;
           height: 10px;
-          background: $dark_gray;
           transform: rotate(45deg);
+          top: 46px;
+          right: -18px;
+          z-index: 10;
+          background: $dark_gray;
           border-radius: 3px;
         }
       }
-
-      span {
+      &-coin{
         font-size: 16px;
         font-weight: 800;
         position: absolute;
-        top: 11px;
-        right: 77px;
-      }
-
-      small {
-        font-size: 12px;
-        color: #8a8a8a;
-        font-weight: 500;
-        margin-right: 10px;
-        margin-left: 13px;
+        top: 9px;
+        right: -22px;
       }
     }
 
