@@ -1605,6 +1605,9 @@ header {
       .top-header__search form .search-open {
         max-width: 500px;
         transition: max-width .3s linear; }
+    .top-header__search button {
+      font-size: 16px;
+      color: #00a99d; }
 
 .block-main__title h1 {
   margin: 0 19px; }
@@ -1970,7 +1973,10 @@ header {
         border-radius: 6px;
         text-transform: uppercase;
         font-weight: 800;
-        font-size: 13px; }
+        font-size: 13px;
+        cursor: pointer; }
+        .footer .footer-main__map-form button:focus {
+          outline: none; }
   .footer .footer-main__copyright {
     text-align: center;
     margin-top: 60px;

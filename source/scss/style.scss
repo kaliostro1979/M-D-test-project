@@ -132,6 +132,8 @@ header {
     }
     button {
       @extend %btn;
+      font-size: 16px;
+      color: $green;
     }
   }
 }
@@ -707,6 +709,10 @@ header {
           text-transform: $uppercase;
           font-weight: 800;
           font-size: 13px;
+          cursor: pointer;
+          &:focus{
+            outline: none;
+          }
         }
       }
     }
