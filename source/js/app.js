@@ -47,7 +47,7 @@ $('.footer-main__map-scroll-top').on('click', ()=>{
 
 /*---  Search form animation ---*/
 
-$('.top-header__search form button').on('click', ()=>{
+$('.icon_search').on('click', ()=>{
     $('.top-header__search form').find('input').toggleClass('search-open')
 })
 
