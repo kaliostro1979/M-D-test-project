@@ -14,6 +14,8 @@
     <meta property="og:image" content="./imges/favicon.png"/>
     <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png">
 
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -22,8 +24,12 @@
         <div class="row">
             <div class="col-12">
                 <div class="top-header">
+                    <div class="top-header__burger-btn">
+                        <span class="burger-btn icon_menu"></span>
+                        <span class="burger-btn icon_close"></span>
+                    </div>
                     <div class="top-header__logo">
-                        <img src="./images/logo.png" alt="">
+                        <a href="#"><img src="./images/logo.png" alt=""></a>
                     </div>
                     <div class="top-header__nav-block">
                         <div class="top-header__nav">
@@ -38,13 +44,34 @@
                             </ul>
                         </div>
                         <div class="top-header__search">
-                            <button>
-                                <img src="./images/s-i.png" alt="">
-                            </button>
+                            <form action="">
+                                <label for="search"></label>
+                                <input id="search" type="text" placeholder="Search">
+                                <button>
+                                    <img src="./images/s-i.png" alt="">
+                                </button>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="mobile-navigation">
+        <div class="mobile-navigation__body">
+            <form action="">
+                <label for="mob-search"></label>
+                <input id="mob-search" type="text" placeholder="search">
+            </form>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Mega menu</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
         </div>
     </div>
 </header>
@@ -70,8 +97,8 @@
             <div class="col-4">
                 <div class="offer-item">
                     <div class="offer-item__icon-wrapper">
-                        <div class="offer-item__icon" style="background-image: url('./images/offer-1.png')">
-                        </div>
+                        <span class="offer-item__icon icon_desktop">
+                        </span>
                     </div>
                     <div class="offer-item__title">
                         <h3>responsive & multipurpose</h3>
@@ -88,8 +115,8 @@
             <div class="col-4">
                 <div class="offer-item">
                     <div class="offer-item__icon-wrapper">
-                        <div class="offer-item__icon" style="background-image: url('./images/offer-2.png')">
-                        </div>
+                        <span class="offer-item__icon icon_puzzle_alt">
+                        </span>
                     </div>
                     <div class="offer-item__title">
                         <h3>easy customization</h3>
@@ -106,7 +133,7 @@
             <div class="col-4">
                 <div class="offer-item">
                     <div class="offer-item__icon-wrapper">
-                        <div class="offer-item__icon" style="background-image: url('./images/offer-3.png')">
+                        <div class="offer-item__icon icon_lifesaver">
                         </div>
                     </div>
                     <div class="offer-item__title">
@@ -122,6 +149,9 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="green-btn offer-green__btn">
+        <span class="icon_toolbox"></span>
     </div>
 </section>
 
@@ -222,43 +252,192 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-3">
-                <div class="members-item">
-                    <div class="members-item__image">
-                        <img src="./images/mem-img-4.jpg" alt="">
-                        <div class="members-item__image-overlay">
-                            <div class="overlay-social">
-                                <span class="social_facebook"></span>
-                            </div>
-                            <div class="overlay-social">
-                                <span class="social_twitter"></span>
-                            </div>
-                            <div class="overlay-social">
-                                <span class="social_googleplus"></span>
-                            </div>
-                            <div class="overlay-social">
-                                <span class="social_vimeo"></span>
-                            </div>
-                            <div class="overlay-social">
-                                <span class="social_dribbble"></span>
+            <div class="col-12">
+                <div class="members-section-carousel owl-carousel">
+                    <div class="members-item">
+                        <div class="members-item__image" style="background-image: url('./images/mem-img-4.jpg')">
+                            <div class="members-item__image-overlay">
+                                <div class="overlay-social">
+                                    <a href="#" class="social_facebook"></a>
+                                </div>
+                                <div class="overlay-social">
+                                    <a href="#" class="social_twitter"></a>
+                                </div>
+                                <div class="overlay-social">
+                                    <a href="#" class="social_googleplus"></a>
+                                </div>
+                                <div class="overlay-social">
+                                    <a href="#" class="social_vimeo"></a>
+                                </div>
+                                <div class="overlay-social">
+                                    <a href="#" class="social_dribbble"></a>
+                                </div>
                             </div>
                         </div>
+                        <div href="#" class="members-item__name">
+                            <a href="#">alexis simpson</a>
+                        </div>
+                        <div class="members-item__info">
+                            <h5>CEO & Developer</h5>
+                            <ul>
+                                <li class="mail">
+                                    <span class="icon_mail"></span>
+                                    <a href="mailto:a.simpson@unique.com">a.simpson@unique.com</a>
+                                </li>
+                                <li class="phone">
+                                    <span class="icon_phone"></span>
+                                    <a href="tel:+1911772221111">+1 911 (77) 222-1111</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="members-item_name">
-                        <p>alexis simpson</p>
+                    <div class="members-item">
+                        <div class="members-item__image" style="background-image: url('./images/mem-img.png')">
+                            <div class="members-item__image-overlay">
+                                <div class="overlay-social">
+                                    <a href="#" class="social_facebook"></a>
+                                </div>
+                                <div class="overlay-social">
+                                    <a href="#" class="social_twitter"></a>
+                                </div>
+                                <div class="overlay-social">
+                                    <a href="#" class="social_googleplus"></a>
+                                </div>
+                                <div class="overlay-social">
+                                    <a href="#" class="social_vimeo"></a>
+                                </div>
+                                <div class="overlay-social">
+                                    <a href="#" class="social_dribbble"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="members-item__name">
+                            <a href="#">steven cole</a>
+                        </div>
+                        <div class="members-item__info">
+                            <h5>User Interface Designer</h5>
+                            <ul>
+                                <li class="mail">
+                                    <span class="icon_mail"></span>
+                                    <a href="mailto:s.cole@unique.com">s.cole@unique.com</a>
+                                </li>
+                                <li class="phone">
+                                    <span class="icon_phone"></span>
+                                    <a href="tel:+1911772221111">+1 911 (77) 222-1111</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="members-item__info">
-                        <h5>CEO & Developer</h5>
-                        <ul>
-                            <li class="mail">
-                                <span class="icon_mail"></span>
-                                <a href="mailto:">a.simpson@unique.com</a>
-                            </li>
-                            <li class="phone">
-                                <span class="icon_phone"></span>
-                                <a href="tel:+1911772221111">+1 911 (77) 222-1111</a>
-                            </li>
-                        </ul>
+                    <div class="members-item">
+                        <div class="members-item__image" style="background-image: url('./images/mem-img.png')">
+                            <div class="members-item__image-overlay">
+                                <div class="overlay-social">
+                                    <a href="#" class="social_facebook"></a>
+                                </div>
+                                <div class="overlay-social">
+                                    <a href="#" class="social_twitter"></a>
+                                </div>
+                                <div class="overlay-social">
+                                    <a href="#" class="social_googleplus"></a>
+                                </div>
+                                <div class="overlay-social">
+                                    <a href="#" class="social_vimeo"></a>
+                                </div>
+                                <div class="overlay-social">
+                                    <a href="#" class="social_dribbble"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="members-item__name">
+                            <a href="#">steven cole</a>
+                        </div>
+                        <div class="members-item__info">
+                            <h5>User Interface Designer</h5>
+                            <ul>
+                                <li class="mail">
+                                    <span class="icon_mail"></span>
+                                    <a href="mailto:s.cole@unique.com">s.cole@unique.com</a>
+                                </li>
+                                <li class="phone">
+                                    <span class="icon_phone"></span>
+                                    <a href="tel:+1911772221111">+1 911 (77) 222-1111</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="members-item">
+                        <div class="members-item__image" style="background-image: url('./images/mem-img.png')">
+                            <div class="members-item__image-overlay">
+                                <div class="overlay-social">
+                                    <a href="#" class="social_facebook"></a>
+                                </div>
+                                <div class="overlay-social">
+                                    <a href="#" class="social_twitter"></a>
+                                </div>
+                                <div class="overlay-social">
+                                    <a href="#" class="social_googleplus"></a>
+                                </div>
+                                <div class="overlay-social">
+                                    <a href="#" class="social_vimeo"></a>
+                                </div>
+                                <div class="overlay-social">
+                                    <a href="#" class="social_dribbble"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="members-item__name">
+                            <a href="#">alexis simpson</a>
+                        </div>
+                        <div class="members-item__info">
+                            <h5>CEO & Developer</h5>
+                            <ul>
+                                <li class="mail">
+                                    <span class="icon_mail"></span>
+                                    <a href="mailto:">a.simpson@unique.com</a>
+                                </li>
+                                <li class="phone">
+                                    <span class="icon_phone"></span>
+                                    <a href="tel:+1911772221111">+1 911 (77) 222-1111</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="members-item">
+                        <div class="members-item__image"style="background-image: url('./images/mem-img.png')">
+                            <div class="members-item__image-overlay">
+                                <div class="overlay-social">
+                                    <a href="#" class="social_facebook"></a>
+                                </div>
+                                <div class="overlay-social">
+                                    <a href="#" class="social_twitter"></a>
+                                </div>
+                                <div class="overlay-social">
+                                    <a href="#" class="social_googleplus"></a>
+                                </div>
+                                <div class="overlay-social">
+                                    <a href="#" class="social_vimeo"></a>
+                                </div>
+                                <div class="overlay-social">
+                                    <a href="#" class="social_dribbble"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="members-item__name">
+                            <a href="#">ashley lennon</a>
+                        </div>
+                        <div class="members-item__info">
+                            <h5>IT Specialist</h5>
+                            <ul>
+                                <li class="mail">
+                                    <span class="icon_mail"></span>
+                                    <a href="mailto: a.lennon@unique.com"> a.lennon@unique.com</a>
+                                </li>
+                                <li class="phone">
+                                    <span class="icon_phone"></span>
+                                    <a href="tel:+1911772221111">+1 911 (77) 222-1111</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -266,7 +445,240 @@
     </div>
 </section>
 
+<section class="section prices">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="block-main">
+                    <div class="block-main__title">
+                        <div class="block-main__title-decor">
 
+                        </div>
+                        <h1>real cheap <span>prices</span></h1>
+                        <div class="block-main__title-decor"></div>
+                    </div>
+                    <div class="block-main__desc">
+                        <p>We offer our customers the best services & solutions, this is our main services list</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <div class="price-item">
+                    <div class="price-item__title">
+                        <p>standard plan</p>
+                    </div>
+                    <div class="price-item__value">
+                        <p><small>$</small>19<span>99</span> <small>Monthly</small></p>
+                    </div>
+                    <div class="price-item__list">
+                        <ul>
+                            <li>
+                                <p>5 Projects</p>
+                            </li>
+                            <li>
+                                <p>5 GB Storage</p>
+                            </li>
+                            <li>
+                                <p>Unlimited Users</p>
+                            </li>
+                            <li>
+                                <p>10 GB Bandwith</p>
+                            </li>
+                            <li>
+                                <p>Enhanced Security</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="price-item__btn">
+                        <a href="#">sign up now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="price-item">
+                    <div class="price-item__title">
+                        <p>
+                            premium plan
+                        </p>
+                    </div>
+                    <div class="price-item__value">
+                        <p><small>$</small>29<span>99</span> <small>Monthly</small></p>
+                    </div>
+                    <div class="price-item__list">
+                        <ul>
+                            <li>
+                                <p>10 Projects</p>
+                            </li>
+                            <li>
+                                <p>15 GB Storage</p>
+                            </li>
+                            <li>
+                                <p>Unlimited Users</p>
+                            </li>
+                            <li>
+                                <p>20 GB Bandwith</p>
+                            </li>
+                            <li>
+                                <p>Enhanced Security</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="price-item__btn">
+                        <a href="#">sign up now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="price-item">
+                    <div class="price-item__title">
+                        <p>
+                            <span class="icon_star"></span>
+                            advanced plan
+                            <span class="icon_star"></span>
+                        </p>
+                    </div>
+                    <div class="price-item__value">
+                        <p><small>$</small>49<span>99</span> <small>Monthly</small></p>
+                    </div>
+                    <div class="price-item__list">
+                        <ul>
+                            <li>
+                                <p>15 Projects</p>
+                            </li>
+                            <li>
+                                <p>30 GB Storage</p>
+                            </li>
+                            <li>
+                                <p>Unlimited Users</p>
+                            </li>
+                            <li>
+                                <p>50 GB Bandwith</p>
+                            </li>
+                            <li>
+                                <p>Enhanced Security</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="price-item__btn">
+                        <a href="#">sign up now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="price-item">
+                    <div class="price-item__title">
+                        <p>
+                            ultimate plan
+                        </p>
+                    </div>
+                    <div class="price-item__value">
+                        <span>
+                            <span class="price_currency">$</span>
+                            <div class="price__value">99</div>
+                        </span>
+                        <p><small>$</small>99<span>99</span> <small>Monthly</small></p>
+                    </div>
+                    <div class="price-item__list">
+                        <ul>
+                            <li>
+                                <p>Unlimited Projects</p>
+                            </li>
+                            <li>
+                                <p>Unlimited Storage</p>
+                            </li>
+                            <li>
+                                <p>Unlimited Users</p>
+                            </li>
+                            <li>
+                                <p>Unlimited Bandwith</p>
+                            </li>
+                            <li>
+                                <p>Enhanced Security</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="price-item__btn">
+                        <a href="#">sign up now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="section footer">
+    <div class="footer-main">
+        <div class="footer-main__logo">
+            <a href="#"><img src="./images/logo.png" alt=""></a>
+        </div>
+        <div class="footer-main__social">
+            <a href="#">
+                <div class="footer-main__social-item social_facebook"></div>
+            </a>
+            <a href="#">
+                <div class="footer-main__social-item social_twitter"></div>
+            </a>
+            <a href="#">
+                <div class="footer-main__social-item social_pinterest"></div>
+            </a>
+            <a href="#">
+                <div class="footer-main__social-item social_rss"></div>
+            </a>
+            <a href="#">
+                <div class="footer-main__social-item social_vimeo"></div>
+            </a>
+            <a href="#">
+                <div class="footer-main__social-item social_youtube"></div>
+            </a>
+            <a href="#">
+                <div class="footer-main__social-item social_linkedin"></div>
+            </a>
+            <a href="#">
+                <div class="footer-main__social-item social_dribbble"></div>
+            </a>
+            <a href="#">
+                <div class="footer-main__social-item social_deviantart"></div>
+            </a>
+            <a href="#">
+                <div class="footer-main__social-item social_picassa"></div>
+            </a>
+            <a href="#">
+                <div class="footer-main__social-item social_tumbleupon"></div>
+            </a>
+        </div>
+        <div class="footer-main__map">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="footer-main__map-form">
+                            <form action="">
+                                <label for="name"></label>
+                                <input id="name" type="text" placeholder="Name" name="name">
+                                <label for="email"></label>
+                                <input id="email" type="email" placeholder="Email" name="email">
+                                <label for="message"></label>
+                                <textarea id="message" placeholder="Message" name="message"></textarea>
+                                <button type="submit">Submit message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-main__map-scroll-top green-btn">
+                <span class="arrow_triangle-up"></span>
+            </div>
+        </div>
+        <div class="footer-main__copyright">
+            <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Startuprr, All Rights Reserved</p>
+        </div>
+    </div>
+</footer>
+
+
+<script src="./js/jquery-3.5.1.min.js"></script>
+<script src="./js/owl.carousel.min.js"></script>
 <script src="./js/app-dist.js"></script>
 </body>
 </html>
